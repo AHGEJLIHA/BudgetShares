@@ -1,0 +1,34 @@
+.budget_balance{
+  margin-top: 100px;
+  padding-top: 75px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+.budget_balance_name{
+  margin-bottom: 50px;
+}
+
+.budget_balance_value{
+  color: #9E77ED;
+}
+
+.month_calculation{
+  margin-top: 100px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+.month_calculation_name{
+  margin-bottom: 50px;
+}
+
+.month_calculation_value{
+  color: #9E77ED;
+}
