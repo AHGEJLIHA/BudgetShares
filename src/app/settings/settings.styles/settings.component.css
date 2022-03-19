@@ -1,0 +1,50 @@
+.settings{
+  margin-top: 100px;
+  padding-top: 75px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+.settings_item{
+  margin-bottom: 50px;
+}
+
+.settings_text{
+  margin-bottom: 50px;
+}
+
+.settings_input{
+  width: 250px;
+  height: 25px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9E77ED;
+
+  margin-bottom: 25px;
+  padding-left: 5px;
+}
+
+.month_calculation{
+  margin-top: 100px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+.month_calculation_text{
+  margin-bottom: 50px;
+}
+
+.month_calculation_value{
+  color: #9E77ED;
+}
