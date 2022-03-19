@@ -1,6 +1,131 @@
-.budget_control_item{
+.budget_control_enter{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
   margin-top: 100px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
+.budget_control_enter_item{
+  width: 50%;
+  text-align: center;
+}
 
+.budget_control_text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+
+  margin-bottom: 30px;
+}
+
+.budget_control_input{
+  width: 250px;
+  height: 25px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9E77ED;
+
+  margin-bottom: 25px;
+  padding-left: 5px;
+}
+
+.budget_control_text_option{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+
+  margin-bottom: 30px;
+}
+
+.budget_control_button{
+  width: 180px;
+  height: 30px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #9E77ED;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+
+  opacity: 0.85;
+}
+
+.budget_control_button:active {
+  background-color: #773aef;
+  color: #c2c2c2;
+}
+
+.budget_control_button:hover{
+  opacity: 1;
+}
+
+.budget_control_history{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 100px;
+}
+
+.budget_control_history_item{
+  width: 50%;
+  text-align: center;
+}
+
+.budget_control_item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.budget_control_item_el{
+  text-align: center;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+
+  padding-right: 20px;
+}
+
+.budget_control_item_el:last-child{
+  padding-right: 0;
+}
+
+.span_text{
+  color: #9E77ED;
+  font-weight: bold;
+}
+
+.budget_control_block_button{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+
+.budget_control_block_button_item{
+  width: 50%;
+  text-align: center;
+}
