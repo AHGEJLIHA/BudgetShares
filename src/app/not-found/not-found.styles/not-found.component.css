@@ -1,0 +1,46 @@
+.not_found{
+  margin-top: 100px;
+  padding-top: 75px;
+}
+
+.not_found_404{
+  font-size: 72px;
+  color: #9E77ED;
+
+  margin-bottom: 20px;
+}
+
+.not_found_text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+
+  margin-bottom: 35px;
+}
+
+button{
+  width: 300px;
+  height: 30px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #9E77ED;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+
+  opacity: 0.85;
+}
+
+button:active{
+  background-color: #773aef;
+  color: #c2c2c2;
+}
+
+button:hover{
+  opacity: 1;
+}
