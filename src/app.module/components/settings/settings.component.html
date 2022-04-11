@@ -1,0 +1,16 @@
+<div class="settings">
+  <div class="settings_item">
+    <div class="settings_text">Введите свой бюджет:</div>
+    <input [(ngModel)]="budgetForCurrentMonth" class="settings_input" placeholder="XXX XXX ₽" type="number">
+    <div>
+      <button (click)="setValue(budgetForCurrentMonth)" class="settings_button">Добавить</button>
+    </div>
+</div>
+  <div class="settings_item">
+    <div class="settings_text">Введите начало месяца:</div>
+    <input class="settings_input" placeholder="XX.XX.XXXX" type="date">
+    <div>
+      <button class="settings_button">Добавить</button>
+    </div>
+  </div>
+</div>

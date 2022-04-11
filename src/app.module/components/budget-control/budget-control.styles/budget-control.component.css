@@ -24,7 +24,7 @@
 
 .budget_control_input{
   width: 250px;
-  height: 25px;
+  height: 30px;
 
   border: 1px solid black;
   border-radius: 5px;
@@ -48,7 +48,7 @@
 }
 
 .budget_control_button{
-  width: 180px;
+  width: 250px;
   height: 30px;
 
   border: 1px solid black;
@@ -63,7 +63,7 @@
   opacity: 0.85;
 }
 
-.budget_control_button:active {
+.budget_control_button:active{
   background-color: #773aef;
   color: #c2c2c2;
 }

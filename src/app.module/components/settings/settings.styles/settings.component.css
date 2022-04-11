@@ -32,6 +32,31 @@
   padding-left: 5px;
 }
 
+.settings_button{
+  width: 250px;
+  height: 30px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #9E77ED;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+
+  opacity: 0.85;
+}
+
+.settings_button:active{
+  background-color: #773aef;
+  color: #c2c2c2;
+}
+
+.settings_button:hover{
+  opacity: 1;
+}
+
 .month_calculation{
   margin-top: 100px;
 

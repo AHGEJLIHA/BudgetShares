@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {Routes, RouterModule} from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from "./app/app.component";
-import { MainMenuComponent } from './main-menu/main-menu.component';
-import { BudgetControlComponent } from "./budget-control/budget-control.component";
-import { SharesComponent } from "./shares/shares.component";
-import { NetProfitComponent } from "./net-profit/net-profit.component";
-import { OtherCurrencyComponent } from "./other-currency/other-currency.component";
-import { SettingsComponent } from "./settings/settings.component";
-import { NotFoundComponent } from "./not-found/not-found.component";
+import { BudgetForCurrentMonthService } from "./services/budget-for-current-month.service";
+
+import { AppComponent } from "./components/app/app.component";
+import { MainMenuComponent } from './components/main-menu/main-menu.component';
+import { BudgetControlComponent } from "./components/budget-control/budget-control.component";
+import { SharesComponent } from "./components/shares/shares.component";
+import { NetProfitComponent } from "./components/net-profit/net-profit.component";
+import { OtherCurrencyComponent } from "./components/other-currency/other-currency.component";
+import { SettingsComponent } from "./components/settings/settings.component";
+import { NotFoundComponent } from "./components/not-found/not-found.component";
 import {FormsModule} from "@angular/forms";
 
 const appRoutes: Routes =[
@@ -39,7 +41,7 @@ const appRoutes: Routes =[
         RouterModule.forRoot(appRoutes),
         FormsModule
     ],
-  providers: [],
+  providers: [BudgetForCurrentMonthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
