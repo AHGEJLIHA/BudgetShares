@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {BudgetForCurrentMonthService} from "../../services/budget-for-current-month.service";
+import {BudgetForCurrentMonthService} from "../../../services/budget-for-current-month.service";
 
 @Component({
   selector: 'settings',
