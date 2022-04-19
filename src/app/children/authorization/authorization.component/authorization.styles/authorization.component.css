@@ -1,0 +1,81 @@
+.form{
+    max-width: 100%;
+
+    margin: 100px auto 0;
+    padding: 70px 20px 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.form_group{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+input, select{
+    width: 500px;
+    height: 30px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #9E77ED;
+}
+
+input.ng-touched.ng-invalid{
+    border: 5px solid red;
+}
+
+input.ng-touched.ng-valid{
+    border: 5px solid green;
+}
+
+select.ng-touched.ng-invalid{
+    border: 5px solid red;
+}
+
+select.ng-touched.ng-valid{
+    border: 5px solid green;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 20px;
+
+    width: 250px;
+    height: 30px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #9E77ED;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+
+    opacity: 0.85;
+}
+
+button:active{
+    background-color: #773aef;
+    color: #c2c2c2;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+button:disabled{
+    opacity: 0.5;
+}

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
+import { AuthorizationModule } from "./children/authorization/authorization.module"
 import { BudgetControlModule } from "./children/budget-control/budget-control.module";
 import { MainMenuModule } from "./children/main-menu/main-menu.module";
 import { NetProfitModule } from "./children/net-profit/net-profit.module";
@@ -23,6 +24,7 @@ import { AppComponent } from "./app.component";
         BrowserModule,
         FormsModule,
         AppRoutingModule,
+        AuthorizationModule,
         BudgetControlModule,
         MainMenuModule,
         NetProfitModule,
