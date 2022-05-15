@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {BudgetForCurrentMonthService} from "../../../services/budget-for-current-month.service";
 
 @Component({
-  selector: 'main-menu',
+  selector: '',
   templateUrl: './main-menu.component.html',
   styleUrls: ['./main-menu.styles/main-menu.component.css']
 })

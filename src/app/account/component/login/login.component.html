@@ -1,0 +1,24 @@
+<div class="form" [formGroup]="viewModel.form" (ngSubmit)="onSubmit()">
+    <div class="form_group">
+        <label for="login">Логин<span style="color: red">*</span></label>
+        <input id="login" type="text" [formControlName]="'userLogin'">
+    </div>
+    <div class="form_group">
+        <label for="password">Пароль<span style="color: red">*</span></label>
+        <input id="password" type="password" [formControlName]="'userPassword'">
+    </div>
+    <div class="form_group">
+        <label for="email">Электронная почта<span style="color: red">*</span></label>
+        <input id="email" type="email" [formControlName]="'userEmail'">
+    </div>
+
+    <div>
+        <ng-container *ngIf="!loading; else loader">
+            <button type="submit" [disabled]="viewModel.form.invalid && !loading" (click)="onSubmit()">Отправить</button>
+        </ng-container>
+        <ng-template #loader>
+        </ng-template>
+
+    </div>
+</div>
+

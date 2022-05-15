@@ -1,20 +1,17 @@
 export class User{
-    public name: string;
+    public login: string;
     public password: string;
     public email: string;
-    public gender: string;
 
     constructor(data: IUser) {
-        this.name = data.name;
+        this.login = data.login;
         this.password = data.password;
         this.email = data.email;
-        this.gender = data.gender;
     }
 }
 
 export interface IUser{
-    name: string;
+    login: string;
     password: string;
     email: string;
-    gender: string;
 }
