@@ -8,9 +8,9 @@
 </div>
   <div class="settings_item">
     <div class="settings_text">Введите начало месяца:</div>
-    <input class="settings_input" placeholder="XX.XX.XXXX" type="date">
+    <input [(ngModel)]="startDate" class="settings_input" placeholder="XX.XX.XXXX" type="date">
     <div>
-      <button class="settings_button">Добавить</button>
+      <button (click)="setStartDate(startDate)" class="settings_button">Добавить</button>
     </div>
   </div>
 </div>

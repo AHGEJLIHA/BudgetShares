@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { finalize } from 'rxjs';
 import { AuthService } from '../../../modules/auth/services/auth.service';
-import {IUser, User} from "../../../models/user";
+import {IUser, User} from "../../../cabinet/models/user";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {LoginModel} from "../../../modules/auth/data/models/login.model";
 

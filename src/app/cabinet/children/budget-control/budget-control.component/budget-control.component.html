@@ -1,0 +1,84 @@
+<div class="budget_control_enter">
+  <div class="budget_control_enter_item" id="enter_profits">
+    <div class="budget_control_text">Введите ваши доходы:</div>
+    <div>
+      <input [(ngModel)]="profitValue" class="budget_control_input" placeholder="+ XXX XXX ₽" type="number">
+    </div>
+    <div>
+      <select [(ngModel)]="profitCategory" class="budget_control_input">
+        <option class="budget_control_text_option">Аптека</option>
+        <option class="budget_control_text_option">Банкомат</option>
+        <option class="budget_control_text_option">Другие услуги</option>
+        <option class="budget_control_text_option">ЖКХ</option>
+        <option class="budget_control_text_option">Кафе</option>
+        <option class="budget_control_text_option">Магазин</option>
+        <option class="budget_control_text_option">Налоги</option>
+        <option class="budget_control_text_option">Одежда</option>
+        <option class="budget_control_text_option">Обувь</option>
+        <option class="budget_control_text_option">Перевод</option>
+        <option class="budget_control_text_option">Путешествия</option>
+        <option class="budget_control_text_option">Развлечения</option>
+        <option class="budget_control_text_option">Транспорт</option>
+      </select>
+    </div>
+    <button (click)="addProfit(profitValue, profitCategory.toString(), profitDate)" class="budget_control_button">Добавить</button>
+  </div>
+  <div class="budget_control_enter_item" id="enter_expenses">
+    <div class="budget_control_text">Введите ваши расходы:</div>
+    <div>
+      <input [(ngModel)]="expenseValue" class="budget_control_input" placeholder="- XXX XXX ₽" type="number">
+    </div>
+    <div>
+      <select [(ngModel)]="expenseCategory" class="budget_control_input">
+        <option class="budget_control_text_option">Аптека</option>
+        <option class="budget_control_text_option">Банкомат</option>
+        <option class="budget_control_text_option">Другие услуги</option>
+        <option class="budget_control_text_option">ЖКХ</option>
+        <option class="budget_control_text_option">Кафе</option>
+        <option class="budget_control_text_option">Магазин</option>
+        <option class="budget_control_text_option">Налоги</option>
+        <option class="budget_control_text_option">Одежда</option>
+        <option class="budget_control_text_option">Обувь</option>
+        <option class="budget_control_text_option">Перевод</option>
+        <option class="budget_control_text_option">Путешествия</option>
+        <option class="budget_control_text_option">Развлечения</option>
+        <option class="budget_control_text_option">Транспорт</option>
+      </select>
+    </div>
+    <button (click)="addExpense(expenseValue, expenseCategory.toString(), expenseDate)" class="budget_control_button">Добавить</button>
+  </div>
+</div>
+<div class="budget_control_history">
+  <div class="budget_control_history_item" id="history_profits">
+    <div class="budget_control_text">История доходов в текущем месяце:</div>
+    <div class="budget_control_text">Всего: <span class="span_text">+ {{getProfitSum()}} ₽</span></div>
+    <div class="budget_control_item">
+      <div *ngFor="let profit of profitService.profitArray">
+        <span class="budget_control_item_el budget_control_item_date">{{profit.date.toLocaleDateString()}}</span>
+        <span class="budget_control_item_el budget_control_item_category">{{profit.category}}</span>
+        <span class="budget_control_item_el budget_control_enter_item_value">+ {{profit.value}} ₽</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="budget_control_history_item" id="history_expenses">
+    <div class="budget_control_text">История расходов в текущем месяце:</div>
+    <div class="budget_control_text">Всего: <span class="span_text">- {{getExpenseSum()}} ₽</span></div>
+    <div class="budget_control_item">
+      <div *ngFor="let expense of expenseService.expenseArray">
+        <span class="budget_control_item_el budget_control_item_date">{{expense.date.toLocaleDateString()}}</span>
+        <span class="budget_control_item_el budget_control_item_category">{{expense.category}}</span>
+        <span class="budget_control_item_el budget_control_item_value">- {{expense.value}} ₽</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="budget_control_block_button">
+  <div class="budget_control_block_button_item">
+    <button class="budget_control_button">Показать полностью</button>
+  </div>
+  <div class="budget_control_block_button_item">
+    <button class="budget_control_button">Показать полностью</button>
+  </div>
+</div>

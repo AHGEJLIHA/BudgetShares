@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {ReactiveFormsModule} from "@angular/forms";
+
 import { AccountLayoutComponent } from './component/account-layout/account-layout.component';
 import { LoginComponent } from './component/login/login.component';
-import {ReactiveFormsModule} from "@angular/forms";
+
 
 const routes: Routes = [
     {
@@ -12,6 +14,7 @@ const routes: Routes = [
         children: [
             {
                 path: '',
+                pathMatch: 'full',
                 redirectTo: 'login'
             },
             {

@@ -1,4 +1,4 @@
-export class User{
+export class User implements IUser{
     public login: string;
     public password: string;
     public email: string;
