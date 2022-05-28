@@ -45,7 +45,7 @@ export class BudgetControlComponent {
     return this.expenseService.getExpenseSum();
   }
 
-  // public clickToRedirect(): void{
-  //   this._router.navigateByUrl("all-profit")
-  // }
+  public clickToRedirect(url: string): void{
+    this._router.navigateByUrl(url).then();
+  }
 }

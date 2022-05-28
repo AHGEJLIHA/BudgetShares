@@ -1,0 +1,11 @@
+<div class="all_profit">
+    <div class="all_profit_title">Все доходы:</div>
+    <div class="all_profit_block">
+        <div *ngFor="let profit of profitService.profitArray" class="all_profit_el">
+            <span>{{profit.date.toLocaleDateString()}}</span>,
+            <span>{{profit.value}}</span>,
+            <span>{{profit.category}}</span>;
+        </div>
+        <br/>
+    </div>
+</div>

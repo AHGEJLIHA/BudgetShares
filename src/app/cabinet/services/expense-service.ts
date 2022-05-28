@@ -2,8 +2,6 @@ import {Expense} from "../models/expense";
 import {EventEmitter} from "@angular/core";
 
 export class ExpenseService {
-    // private _expenseConst = new Expense(0, Category[Category.ДругиеУслуги], new Date(0, 0, 2000));
-
     public expenseArray: Expense[] = [];
     private _expenseSum: number = 0;
     private _onClickExpense:EventEmitter<Expense> = new EventEmitter();

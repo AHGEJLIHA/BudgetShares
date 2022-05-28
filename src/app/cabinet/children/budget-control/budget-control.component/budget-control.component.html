@@ -48,6 +48,7 @@
     <button (click)="addExpense(expenseValue, expenseCategory.toString(), expenseDate)" class="budget_control_button">Добавить</button>
   </div>
 </div>
+
 <div class="budget_control_history">
   <div class="budget_control_history_item" id="history_profits">
     <div class="budget_control_text">История доходов в текущем месяце:</div>
@@ -59,8 +60,8 @@
         <span class="budget_control_item_el budget_control_enter_item_value">+ {{profit.value}} ₽</span>
       </div>
     </div>
-
   </div>
+
   <div class="budget_control_history_item" id="history_expenses">
     <div class="budget_control_text">История расходов в текущем месяце:</div>
     <div class="budget_control_text">Всего: <span class="span_text">- {{getExpenseSum()}} ₽</span></div>
@@ -68,17 +69,18 @@
       <div *ngFor="let expense of expenseService.expenseArray">
         <span class="budget_control_item_el budget_control_item_date">{{expense.date.toLocaleDateString()}}</span>
         <span class="budget_control_item_el budget_control_item_category">{{expense.category}}</span>
-        <span class="budget_control_item_el budget_control_item_value">- {{expense.value}} ₽</span>
+        <span class="budget_control_item_el budget_control_enter_item_value">- {{expense.value}} ₽</span>
       </div>
     </div>
   </div>
 </div>
 
+
 <div class="budget_control_block_button">
   <div class="budget_control_block_button_item">
-    <button class="budget_control_button">Показать полностью</button>
+    <button (click)="clickToRedirect('all-profit')" class="budget_control_button">Показать полностью</button>
   </div>
   <div class="budget_control_block_button_item">
-    <button class="budget_control_button">Показать полностью</button>
+    <button (click)="clickToRedirect('all-expense')" class="budget_control_button">Показать полностью</button>
   </div>
 </div>

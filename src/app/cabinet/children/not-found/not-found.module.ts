@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
 
 import { NotFoundComponent } from "./not-found.component/not-found.component";
+import {RouterModule} from "@angular/router";
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { NotFoundComponent } from "./not-found.component/not-found.component";
     ],
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        RouterModule
     ],
     bootstrap: [
         NotFoundComponent

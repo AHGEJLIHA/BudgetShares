@@ -1,0 +1,11 @@
+<div class="all_expense">
+    <div class="all_expense_title">Все расходы:</div>
+    <div class="all_expense_block">
+        <div *ngFor="let expense of expenseService.expenseArray" class="all_expense_el">
+            <span>{{expense.date.toLocaleDateString()}}</span>,
+            <span>{{expense.value}}</span>,
+            <span>{{expense.category}}</span>;
+        </div>
+        <br/>
+    </div>
+</div>

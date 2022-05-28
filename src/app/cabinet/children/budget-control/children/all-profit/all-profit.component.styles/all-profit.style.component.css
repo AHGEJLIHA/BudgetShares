@@ -1,0 +1,41 @@
+.all_profit{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.all_profit_title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+
+    margin-bottom: 30px;
+}
+
+.all_profit_block{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+}
+
+.all_profit_el{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+
+    margin-bottom: 30px;
+}
+
