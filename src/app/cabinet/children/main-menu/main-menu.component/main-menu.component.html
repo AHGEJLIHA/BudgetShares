@@ -1,6 +1,6 @@
 <div class="budget_balance">
   <div class="budget_balance_text">Остаток бюджета:</div>
-  <div class="budget_balance_value">{{getValue()}} ₽</div>
+  <div class="budget_balance_value">{{getValue() + profitService.getProfitSum() - expenseService.getExpenseSum()}} ₽</div>
 </div>
 
 <div class="month_calculation">

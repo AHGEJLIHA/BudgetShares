@@ -1,0 +1,40 @@
+.other_currency{
+    margin-top: 150px;
+    padding: 0 100px 0 100px;
+}
+
+.other_currency_title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+
+    text-transform: uppercase;
+}
+
+.other_currency_block{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.other_currency_text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #9E77ED;
+}
+
+input, select{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9E77ED;
+
+    width: 250px;
+    height: 30px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}

@@ -12,11 +12,4 @@ export class StartToEndDateService {
     public getStartDate(): Date{
         return this._startDateService;
     }
-
-    // public getEndDate(): Date{
-    //     console.log(typeof this._startDateService);
-    //     this.onClick.emit(this._endDateService);
-    //
-    //     return this._endDateService;
-    // }
 }

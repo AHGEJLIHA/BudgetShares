@@ -1,1 +1,19 @@
+<div class="other_currency">
+    <div class="other_currency_title">
+        Конвертер валют
+    </div>
+    <div class="other_currency_block">
+        <div class="other_currency_text">Рубли ₽</div>
+        <select [(ngModel)]="chosenCurrency">
+            <option *ngFor="let currency of currencyEnum">
+                {{currency}}
+            </option>
+        </select>
+    </div>
+    <div class="other_currency_block">
+        <input [formControl]="inputCurrency" class="other_currency_input" placeholder="XXX XXX ₽" type="number" step="0.01">
+        <input [formControl]="exportCurrency" class="other_currency_input" placeholder="XXX XXX {{chosenCurrency}}" type="number" step="0.01">
+    </div>
+</div>
+
 

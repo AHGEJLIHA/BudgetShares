@@ -22,4 +22,15 @@ export class ExpenseService {
         this._onClickNumber.emit();
         return this._expenseSum;
     }
+
+    public getExpenseSumForCategory(category: string): number{
+        let resultSum = 0;
+
+        for (let i = 0; i < this.expenseArray.length; i++) {
+            if (this.expenseArray[i].category === category)
+                resultSum += this.expenseArray[i].value;
+        }
+
+        return resultSum;
+    }
 }

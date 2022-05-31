@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {BudgetForCurrentMonthService} from "../../../services/budget-for-current-month.service";
 import {StartToEndDateService} from "../../../services/start-to-end-date.service";
+import {ProfitService} from "../../../services/profit-service";
+import {ExpenseService} from "../../../services/expense-service";
 
 @Component({
   selector: 'main-menu',
@@ -14,7 +16,9 @@ export class MainMenuComponent{
 
   constructor(
       public budgetForCurrentMonthService: BudgetForCurrentMonthService,
-      public startToEndDateService: StartToEndDateService
+      public startToEndDateService: StartToEndDateService,
+      public profitService: ProfitService,
+      public expenseService: ExpenseService
   ) {
     this.budgetForCurrentMonthService.onClick.subscribe(x => this.budgetForCurrentMonth = x);
     this.startToEndDateService.onClick.subscribe(y => this.startDate = y);

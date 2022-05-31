@@ -1,7 +1,40 @@
-<div class="control_budget_item" id="profits_item">
-  <div class="control_budget_item_enter">
-    <div class="control_budget_item_enter_text">Введите ваши доходы:</div>
-    <input class="control_budget_item_enter_value">
-    <input class="control_budget_item_enter_category">
-  </div>
+<div class="shares">
+    <div class="shares_text">Остаток бюджета: {{budgetForCurrentMonth.getValue() + profitService.getProfitSum() - expenseService.getExpenseSum()}} ₽</div>
+
+    <div class="shares_el">
+        <div class="shares_el_item expense">
+            <div class="shares_el_item_title">50%</div>
+            <div class="shares_el_item_subtitle">Обязательные расходы</div>
+            <div class="shares_el_item_budget">{{budgetForCurrentMonth.getValue() * 0.5}} ₽</div>
+            <div class="shares_el_item_balance">
+                <div class="shares_el_item_balance_item">Остаток:</div>
+                <div class="shares_el_item_balance_item">{{budgetForCurrentMonth.getValue() * 0.5 + profitService.getProfitSum() - expenseService.getExpenseSum()}} ₽</div>
+            </div>
+            <div class="shares_el_item_category">
+                <div *ngFor="let category of mandatoryCategory" class="shares_el_item_category_item">{{category}}:
+                    {{expenseService.getExpenseSumForCategory(category)}}<br></div>
+            </div>
+        </div>
+        <div class="shares_el_item expense">
+            <div class="shares_el_item_title">40%</div>
+            <div class="shares_el_item_subtitle">Необязательные расходы</div>
+            <div class="shares_el_item_budget">{{budgetForCurrentMonth.getValue() * 0.4}} ₽</div>
+            <div class="shares_el_item_balance">
+                <div class="shares_el_item_balance_item">Остаток:</div>
+                <div class="shares_el_item_balance_item">{{budgetForCurrentMonth.getValue() * 0.4 + profitService.getProfitSum() - expenseService.getExpenseSum()}} ₽</div>
+            </div>
+            <div class="shares_el_item_category">
+                <div *ngFor="let category of optionalCategory" class="shares_el_item_category_item">{{category}}:
+                    {{expenseService.getExpenseSumForCategory(category)}}<br></div>
+            </div>
+        </div>
+        <div class="shares_el_item" id="save">
+            <div class="shares_el_item_title">10%</div>
+            <div class="shares_el_item_subtitle">Накопления</div>
+            <div class="shares_el_item_subtitle" id="save_text">
+                За этот месяц вы накопили:
+                {{budgetForCurrentMonth.getValue() * 0.1}} ₽
+            </div>
+        </div>
+    </div>
 </div>
